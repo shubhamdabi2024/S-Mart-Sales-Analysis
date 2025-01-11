@@ -1,6 +1,14 @@
 # S-Mart-Sales-Analysis
 This project analyzes S-Mart sales data using SQL, focusing on sales trends, product performance, and customer behavior across Beauty, Clothing, and Electronics categories.
 
+# Task Performed in MYSQL
+- Aggregate Function
+- Windows Function
+- Subqueries
+- Conditional Logic
+- Grouping
+
+
 ### 1. Write a SQL query to retrieve all columns for sales made on '2022-11-05
 SELECT * FROM sales_retail
 WHERE sale_date = '2022-11-05';
@@ -62,7 +70,7 @@ sales_retail
 group by category;
 
 
-#### 10. Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)
+### 10. Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)
 select Count(customer_id) as Total_Order,
 case
 when Hour(sale_time) < 12 then 'Morning'
@@ -80,3 +88,11 @@ Else 'Evening'
 End as Shifts
 From sales_retail
 Group by Shifts;
+
+## Don't Forget to follow me on <a href= "https://www.linkedin.com/in/shubham-dabi-9175992b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzwKecuw4RcqtZJIfbfkl%2Fg%3D%3D">Linkedin</a>
+
+# Finally, I would like to extend my gratitude to everyone who sparked the ideas behind this project. The completion of this report is a testament to the collaborative spirit. Thank you for your support and engagement.
+
+## Presented by - Shubham Dabi @ Aspiring Data Analyst
+# Thank you
+
